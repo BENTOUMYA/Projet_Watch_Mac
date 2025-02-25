@@ -1,0 +1,82 @@
+/* Variables globales */
+:root {
+    --primary-color: #007bff; /* Couleur principale (bleu) */
+    --secondary-color: #6c757d; /* Texte secondaire */
+    --accent-color: #ff9800; /* Couleur d'accentuation (orange) */
+    --bg-light: #f8f9fa; /* Fond clair */
+    --shadow: rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  }
+  
+  /* Navbar personnalisée */
+  .navbar {
+    box-shadow: 0 2px 5px var(--shadow);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Logo ONA Watch */
+  .logo-text {
+    font-family: 'Roboto', sans-serif; /* Police moderne */
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 1px; /* Espacement des lettres */
+    text-transform: uppercase; /* Majuscules */
+  }
+  
+  .logo-text:hover {
+    color: var(--accent-color); /* Changement de couleur au survol */
+    transition: color 0.3s ease;
+  }
+  
+  /* Navbar links */
+  .navbar-light .navbar-nav .nav-link {
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+  }
+  
+  /* Champ de recherche */
+  .form-control {
+    border-color: var(--primary-color);
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .logo-text {
+      font-size: 1.2rem; /* Réduction de la taille du texte sur mobile */
+    }
+  
+    .form-control,
+    .btn-primary {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .nav-link {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  }
